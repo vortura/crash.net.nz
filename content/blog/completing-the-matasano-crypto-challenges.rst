@@ -3,7 +3,6 @@ Completing the Matasano Crypto Challenges
 
 :date: 2013-10-02 20:36
 :tags: python, crypto
-:category: blog
 :slug: completing-the-matasano-crypto-challenges
 :author: Richard Gray
 
