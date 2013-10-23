@@ -10,6 +10,14 @@ TIMEZONE = 'Europe/London'
 
 DEFAULT_LANG = u'en'
 
+TYPOGRIFY = True
+
+OUTPUT_PATH = 'output/'
+PATH = 'content/'
+THEME = 'notmyidea'
+USE_FOLDER_AS_CATEGORY = False
+DEFAULT_CATEGORY = 'blog'
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
@@ -28,5 +36,10 @@ SOCIAL = (('Twitter', 'https://twitter.com/crashnetnz'),
 
 DEFAULT_PAGINATION = False
 
+ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{slug}/'
+ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{slug}/index.html'
+
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
+
+GOOGLE_ANALYTICS = 'UA-19608372-1'
