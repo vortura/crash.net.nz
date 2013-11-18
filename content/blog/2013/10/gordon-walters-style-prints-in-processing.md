@@ -7,7 +7,7 @@ Author: Richard Gray
 Gordon Walters was an artist and graphic designer, born in Wellington, New
 Zealand in 1951. Though he produced works in a variety of styles, he is best
 known for his koru series of prints, which are instantly recognisable to most
-New Zealanders, and are amongst my favourite pieces of art. One of his most
+New Zealanders. They are some of my favourite pieces of art. One of his most
 celebrated pieces, *Maheno*, is fairly typical of the series as a whole:
 
 <img src="/images/Walters_Maheno.jpg" alt="Gordon Walters - Maheno">
@@ -15,16 +15,23 @@ celebrated pieces, *Maheno*, is fairly typical of the series as a whole:
 The artworks take their name from the *koru*, a spiral pattern representing the
 tight curl of a new fern frond. It is one of the primary motifs of Māori art,
 particularly wood carving, and symbolises creation, life, and new growth.
-Walters' modern abstraction of this traditional pattern retains this symbolism,
-but also adds to it as well. The alternating black and white lines suggest to me
-a kind of Yin and Yang theme. Opposite forces, light and dark, in balance.
+I think Walters' modern abstraction of this traditional pattern retain the
+symbolism, but it seems that the artist didn't see it that way himself. In [this
+article](http://www.art-newzealand.com/Issues1to40/walters.htm) in *Art New
+Zealand*, Walters is quoted:
 
-If I'm honest though, I like these prints not because of any implied meaning,
-but simply because they're such striking images, and because they're fun to look
-at. I like the way the black background of each white koru becomes the
-foreground of a black koru as you scan across. It's obvious, but still seems to
-trick the eye, kind of like a [Blivet](https://en.wikipedia.org/wiki/Blivet).
-I am also reminded of M. C. Escher's [*Sky and Water
+> My work is an investigation of positive/negative relationships within
+> a deliberately limited range of forms; the forms I use have no descriptive
+> value in themselves and are used solely to demonstrate relations. I believe
+> that dynamic relations are most clearly expressed by the repetition of a few
+> simple elements.
+
+Ultimately though, I like these prints not because of any implied meaning, but
+simply because they're such striking images, and because they're fun to look at.
+I like the way the black background of each white koru becomes the foreground of
+a black koru as you scan across. It's obvious, but still seems to trick the eye,
+kind of like a [Blivet](https://en.wikipedia.org/wiki/Blivet).  I am also
+reminded of M. C.  Escher's [*Sky and Water
 I*](https://en.wikipedia.org/wiki/Sky_and_Water_I), an interlocking grid of fish
 and flying birds, where the negative space around the birds forms the images of
 the fish, and vice versa.
