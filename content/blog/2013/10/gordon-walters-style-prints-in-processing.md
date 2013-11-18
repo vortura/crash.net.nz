@@ -73,7 +73,7 @@ As my first real Processing project I'm quite pleased with results, even if the
 code is a bit fugly. I would quite like to rewrite it in Processing.js at some
 point so it will run in a web browser without requiring Java. It would also be
 fun to animate it, as a left-right infinite scroll sort of thing, or more
-interactively, such that the koru avoid or are attracted to the mouse pointed.
+interactively, such that the koru avoid or are attracted to the mouse pointer.
 
 If you'd like to take a look at the code, it's available on GitHub
 [here](https://github.com/vortura/walters).
