@@ -14,7 +14,7 @@ TYPOGRIFY = True
 
 OUTPUT_PATH = 'output/'
 PATH = 'content/'
-THEME = 'notmyidea'
+THEME = 'themes/crash'
 USE_FOLDER_AS_CATEGORY = False
 DEFAULT_CATEGORY = 'blog'
 

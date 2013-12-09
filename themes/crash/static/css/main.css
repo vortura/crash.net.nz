@@ -1,0 +1,29 @@
+/*
+	Name: Crash
+	Date: 2013-10-21
+	Description: 
+	Version: 1.0
+	License: MIT <http://opensource.org/licenses/MIT>
+	Author: Richard Gray <http://crash.net.nz/>
+*/
+
+/* Imports */
+@import url("reset.css");
+@import url(//fonts.googleapis.com/css?family=Yanone+Kaffeesatz&subset=latin);
+
+/***** Global *****/
+/* Body */
+body {
+    background: #F5F4EF;
+    color: #000305;
+    font-size: 18px; /* Base font size: 14px */
+    font-family: "Hoefler Text", Constantia, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif; 
+    line-height: 1.429;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+body .wrap {
+    width: 612px;
+}

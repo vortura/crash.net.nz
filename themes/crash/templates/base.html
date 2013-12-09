@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+<head>
+    <meta charset="utf-8" />
+    <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}" />
+    {% block head %}
+    {% endblock head %}
+</head>
+
+<body>
+    <div class="wrap">
+        <header id="banner" class="body">
+            <h1><a href="{{ SITEURL }}">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1>
+        </header><!-- /#banner -->
+
+        <nav id="menu"><ul>
+
+            <!--
+            {% for title, link in MENUITEMS %}
+                <li><a href="{{ link }}">{{ title }}</a></li>
+            {% endfor %}
+            -->
+
+            {% if DISPLAY_PAGES_ON_MENU %}
+                {% for p in PAGES %}
+                    <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+                {% endfor %}
+            {% else %}
+                {% if DISPLAY_CATEGORIES_ON_MENU %}
+                    {% for cat, null in categories %}
+                        <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+                    {% endfor %}
+                {% endif %}
+            {% endif %}
+        </ul></nav><!-- /#menu -->
+
+        {% block content %}
+        {% endblock %}
+
+        <footer id="contentinfo" class="body">
+            <address id="about" class="vcard body">
+                Powered by <a href="http://getpelican.com/">Pelican</a>
+                and <a href="http://python.org">Python</a>.
+            </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+    </div>
+</body>
+</html>
