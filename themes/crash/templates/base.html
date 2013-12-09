@@ -10,40 +10,38 @@
 
 <body>
     <div class="wrap">
-        <header id="banner" class="body">
-            <h1><a href="{{ SITEURL }}">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1>
-        </header><!-- /#banner -->
+        <div id="container">
+            <nav id="menu">
 
-        <nav id="menu"><ul>
-
-            <!--
-            {% for title, link in MENUITEMS %}
-                <li><a href="{{ link }}">{{ title }}</a></li>
-            {% endfor %}
-            -->
-
-            {% if DISPLAY_PAGES_ON_MENU %}
-                {% for p in PAGES %}
-                    <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+                crash.net.nz
+                {% for title, link in MENUITEMS %}
+                    <span class="menuitem"> <a href="{{ link }}">{{ title }}</a> </span>
                 {% endfor %}
-            {% else %}
-                {% if DISPLAY_CATEGORIES_ON_MENU %}
-                    {% for cat, null in categories %}
-                        <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+
+                {% if DISPLAY_PAGES_ON_MENU %}
+                    {% for p in PAGES %}
+                        <span class="menuitem"> <a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a> </span>
                     {% endfor %}
                 {% endif %}
-            {% endif %}
-        </ul></nav><!-- /#menu -->
+                {% if DISPLAY_CATEGORIES_ON_MENU %}
+                    {% for cat, null in categories %}
+                        <span class="menuitem"> <a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a> </span>
+                    {% endfor %}
+                {% endif %}
+                <hr>
+            </nav><!-- /#menu -->
 
-        {% block content %}
-        {% endblock %}
+            {% block content %}
+            {% endblock %}
 
         <footer id="contentinfo" class="body">
+            <hr>
             <address id="about" class="vcard body">
                 Powered by <a href="http://getpelican.com/">Pelican</a>
                 and <a href="http://python.org">Python</a>.
             </address><!-- /#about -->
         </footer><!-- /#contentinfo -->
+        </div>
     </div>
 </body>
 </html>

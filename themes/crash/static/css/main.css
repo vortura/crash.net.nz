@@ -9,21 +9,179 @@
 
 /* Imports */
 @import url("reset.css");
-@import url(//fonts.googleapis.com/css?family=Yanone+Kaffeesatz&subset=latin);
 
 /***** Global *****/
+@media all {html {font-size: 18px;}}
+
 /* Body */
 body {
-    background: #F5F4EF;
+    background: #fdfdfd;
     color: #000305;
-    font-size: 18px; /* Base font size: 14px */
-    font-family: "Hoefler Text", Constantia, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif; 
-    line-height: 1.429;
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-size: 100%;
+    line-height: 25px;
     margin: 0;
     padding: 0;
     text-align: left;
+    text-rendering: optimizeLegibility;
 }
 
-body .wrap {
+a {
+    color: #00BFFF;
+    text-decoration: none;
+}
+
+hr {
+    margin: 0px 0px 24px 0px;
+    border: 0;
+    border-top: 1px solid #D5D5D5;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+blockquote {
+    margin-left: 1em;
+    margin-bottom: 25px;
+    fint-size: 90%;
+    font-style: italic;
+}
+
+h1, h2 {
+    color: #00BFFF;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-size: 2.0000em; /* 36px */
+    line-height: 1.3889em; /* 50px */
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 1em; /* 18px */
+    line-height: 1.3889em; /* 25px */
+}
+
+p, pre {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 25px;
+    margin-left: 0px;
+}
+
+ul, dl, ol {
+    margin-top: 25px;
+    margin-right: 0px;
+    margin-bottom: 25px;
+    margin-left: 0px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+body p code {
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+    font-size: 13px;
+    padding: 1px 3px;
+    line-height: 20px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+figure {
+    display: table;
+    width: 1px; /* This can be any width, so long as it's narrower than any image */
+}
+
+footer {
+    text-align: center;
+    font-size: 90%;
+    margin-top: 50px;
+}
+
+img, figcaption {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    display: table-row;
+    text-align: right;
+    font-weight: 100;
+    font-size: 80%;
+    line-height 25px;
+}
+
+body code, body pre {
+    font-family: Consolas,Menlo,"Courier New",monospace;
+    font-size: 14px;
+}
+
+/***** Classes *****/
+.wrap {
+    margin: 25px;
+}
+
+span.articledate {
+    color: #B2B2B2;
+    float: right;
+}
+
+span.menuitem {
+    float: right;
+    margin-left: 1em;
+}
+
+abbr.published {
+    color: #B2B2B2;
+    text-align: left;
+    display: block;
+}
+
+.clear {
+    clear: both;
+}
+
+.articleheader {
+    margin-bottom: 25px;
+}
+
+/***** IDs *****/
+#container {
+    margin-left: auto;
+    margin-right: auto;
     width: 612px;
 }
+
+#content {
+    width: 612px;
+}
+
+#menu {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-size: 150%;
+    font-weight: bold;
+    line-height: 50px;
+    margin-bottom: 50px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #00BFFF;
+}
+
+#post-list {
+    font-size: 110%;
+}
+
+#post-list a {
+    color: #000305;
+    text-decoration: none;
+}
+
+#post-list a:hover {
+    color: #00BFFF;
+    text-decoration: none;
+}
+
+#post-list li {
+    margin-bottom: 25px;
+}
+
