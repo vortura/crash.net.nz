@@ -10,6 +10,10 @@ TIMEZONE = 'Europe/London'
 
 DEFAULT_LANG = u'en'
 
+DATE_FORMATS = {
+    'en': '%b %d, %Y',
+}
+
 TYPOGRIFY = True
 
 OUTPUT_PATH = 'output/'
