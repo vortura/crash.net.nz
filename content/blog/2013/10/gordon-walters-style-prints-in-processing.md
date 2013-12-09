@@ -7,15 +7,18 @@ Author: Richard Gray
 Gordon Walters was an artist and graphic designer, born in Wellington, New
 Zealand in 1951. Though he produced works in a variety of styles, he is best
 known for his koru series of prints, which are instantly recognisable to most
-New Zealanders. They are some of my favourite pieces of art. One of his most
-celebrated pieces, *Maheno*, is fairly typical of the series as a whole:
+New Zealanders. One of his most celebrated pieces, *Maheno*, is fairly typical
+of the series as a whole:
 
+<figure>
 <img src="/images/Walters_Maheno.jpg" alt="Gordon Walters - Maheno">
+<figcaption>Gordon Walters - Maheno</figcaption>
+</figure>
 
 The artworks take their name from the *koru*, a spiral pattern representing the
 tight curl of a new fern frond. It is one of the primary motifs of Māori art,
 particularly wood carving, and symbolises creation, life, and new growth.
-I think Walters' modern abstraction of this traditional pattern retain the
+I think Walters' modern abstraction of this traditional pattern retains the
 symbolism, but it seems that the artist didn't see it that way himself. In [this
 article](http://www.art-newzealand.com/Issues1to40/walters.htm) in *Art New
 Zealand*, Walters is quoted:
@@ -64,10 +67,22 @@ and whether any given koru pair will include a circle between them.
 
 Here are some sample images.
 
+<figure>
 <img src="/images/pkoru1.jpg" alt="Koru 1">
+<figcaption>Classic</figcaption>
+</figure>
+<figure>
 <img src="/images/pkoru2.jpg" alt="Koru 2">
+<figcaption>Stormy</figcaption>
+</figure>
+<figure>
 <img src="/images/pkoru3.png" alt="Koru 3">
+<figcaption>Blue & Yellow</figcaption>
+</figure>
+<figure>
 <img src="/images/pkoru4.png" alt="Koru 4">
+<figcaption>Sky Blue</figcaption>
+</figure>
 
 As my first real Processing project I'm quite pleased with results, even if the
 code is a bit fugly. I would quite like to rewrite it in Processing.js at some
