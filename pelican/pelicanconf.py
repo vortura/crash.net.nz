@@ -33,7 +33,7 @@ LINKS =  (('Pelican', 'http://getpelican.com/'),
           ('Jinja2', 'http://jinja.pocoo.org/'))
 
 # Social widget
-SOCIAL = (('Twitter', 'https://twitter.com/crashnetnz'),
+SOCIAL = (('Twitter', 'https://twitter.com/elvortura'),
           ('Github', 'https://github.com/vortura'),
           ('Last.fm', 'http://www.last.fm/user/vortura'),
           ('Flickr', 'https://secure.flickr.com/photos/richardgray/'),)
