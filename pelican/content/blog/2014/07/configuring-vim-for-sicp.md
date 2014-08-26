@@ -1,7 +1,7 @@
 Title: Configuring Vim for SICP
 Date: 2014-08-26 22:18
 Tags: vim, sicp, racket, scheme, tmux
-Slug: vim-tmux-and-racket-setup-for-sicp
+Slug: configuring-vim-for-sicp
 Author: Richard Gray
 
 For the past few months, I've been chipping away at *Structure and
