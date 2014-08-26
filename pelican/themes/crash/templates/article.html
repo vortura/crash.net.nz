@@ -17,9 +17,9 @@
 {% block content %}
 <section id="content" class="body">
   <header class="articleheader">
-    <h2 class="entry-title">
+    <h1 class="entry-title">
       <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
-         title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
+         title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>
     <abbr class="published" title="{{ article.date.isoformat() }}">
       Posted {{ article.locale_date }}
     </abbr>
