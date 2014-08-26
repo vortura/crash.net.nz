@@ -9,6 +9,7 @@
 
 /* Imports */
 @import url("reset.css");
+@import url("pygments.css");
 
 /***** Global *****/
 @media all {html {font-size: 18px;}}
@@ -48,7 +49,7 @@ blockquote {
     font-style: italic;
 }
 
-h1, h2 {
+h1 {
     color: #00BFFF;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
     font-size: 2.0000em; /* 36px */
@@ -56,12 +57,26 @@ h1, h2 {
     margin-bottom: 25px;
 }
 
+h2 {
+    color: #000305;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-size: 1.5em; /* 36px */
+    line-height: 1.3889em; /* 50px */
+    margin-bottom: 25px;
+}
+
+h3 {
+    color: #000305;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-size: 1em; /* 36px */
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+
+
 p {
     font-size: 1em; /* 18px */
     line-height: 1.3889em; /* 25px */
-}
-
-p, pre {
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 25px;
@@ -110,9 +125,10 @@ img, figcaption {
 }
 
 body code, body pre {
-    font-family: Consolas,Menlo,"Courier New",monospace;
+    font-family: Consolas,Menlo,"Courier New",monospace,PowerlineSymbols;
     font-size: 14px;
 }
+
 
 /***** Classes *****/
 .wrap {
@@ -142,6 +158,19 @@ abbr.published {
 .articleheader {
     margin-bottom: 25px;
 }
+
+.highlight pre {
+    margin-left: -25px;
+    margin-bottom: 25px;
+    background-color: #fafafa;
+    border-color: #d5d5d5;
+    border-style: solid;
+    border-width: 1px;
+    border-left-width: 10px;
+    padding: 11px 15px 12px;
+    overflow-x: auto;
+}
+
 
 /***** IDs *****/
 #container {
