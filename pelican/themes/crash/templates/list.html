@@ -8,7 +8,7 @@
 <ol id="post-list">
     {% for article in articles_page.object_list %}
     <li><article class="hentry">
-        <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
+        <a href="/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
         <span class="articledate" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </span>
     </article></li>
     {% endfor %}

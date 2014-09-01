@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
-    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}" />
+    <link rel="stylesheet" href="/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}" />
     {% block head %}
     {% endblock head %}
 </head>
@@ -20,12 +20,12 @@
 
                 {% if DISPLAY_PAGES_ON_MENU %}
                     {% for p in PAGES %}
-                        <span class="menuitem"> <a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a> </span>
+                        <span class="menuitem"> <a href="/{{ p.url }}">{{ p.title }}</a> </span>
                     {% endfor %}
                 {% endif %}
                 {% if DISPLAY_CATEGORIES_ON_MENU %}
                     {% for cat, null in categories %}
-                        <span class="menuitem"> <a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a> </span>
+                        <span class="menuitem"> <a href="/{{ cat.url }}">{{ cat }}</a> </span>
                     {% endfor %}
                 {% endif %}
                 <hr>
