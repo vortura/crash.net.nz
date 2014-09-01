@@ -2,4 +2,5 @@
 *.pyc
 output
 pelican/themes/notmyidea/
+pelican/cache/
 
