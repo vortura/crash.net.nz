@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Richard Gray'
 SITENAME = u'crash.net.nz'
-SITEURL = ''
+SITEURL = 'http://crash.net.nz'
 
 TIMEZONE = 'Europe/London'
 
@@ -21,6 +21,10 @@ PATH = 'content/'
 THEME = 'themes/crash'
 USE_FOLDER_AS_CATEGORY = False
 DEFAULT_CATEGORY = 'blog'
+
+# Caching
+CACHE_CONTENT = True
+LOAD_CONTENT_CACHE = True
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
