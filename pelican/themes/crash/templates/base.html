@@ -19,7 +19,7 @@
                 {% endfor %}
 
                 {% if DISPLAY_PAGES_ON_MENU %}
-                    {% for p in PAGES %}
+                    {% for p in pages %}
                         <span class="menuitem"> <a href="/{{ p.url }}">{{ p.title }}</a> </span>
                     {% endfor %}
                 {% endif %}

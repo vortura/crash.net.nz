@@ -1,46 +1,55 @@
-from fabric.api import *
-import fabric.contrib.project as project
+from fabric import task
+from invoke import run as local
+
+from patchwork.transfers import rsync
+
 import os
 
-# Local path configuration (can be absolute or relative to fabfile)
-env.deploy_path = 'output'
-DEPLOY_PATH = env.deploy_path
+# c.run path configuration (can be absolute or relative to fabfile)
+deploy_path = 'output'
 
 # Remote server configuration
 production = 'burroughs.crash.net.nz'
 dest_path = '/var/www/crash'
 
-def clean():
-    if os.path.isdir(DEPLOY_PATH):
-        local('rm -rf {deploy_path}'.format(**env))
-        local('mkdir {deploy_path}'.format(**env))
+@task
+def clean(c):
+    if os.path.isdir(deploy_path):
+        local('rm -rf {}'.format(deploy_path))
+        local('mkdir {}'.format(deploy_path))
 
-def build():
+@task
+def build(c):
     local('pelican -s pelicanconf.py')
 
-def rebuild():
-    clean()
-    build()
+@task
+def rebuild(c):
+    clean(c)
+    build(c)
 
-def regenerate():
+@task
+def regenerate(c):
     local('pelican -r -s pelicanconf.py')
 
-def serve():
-    local('cd {deploy_path} && python -m SimpleHTTPServer'.format(**env))
+@task
+def serve(c):
+    local('cd {} && python -m SimpleHTTPServer'.format(deploy_path))
 
-def reserve():
+@task
+def reserve(c):
     build()
     serve()
 
-def preview():
+@task
+def preview(c):
     local('pelican -s publishconf.py')
 
-@hosts(production)
-def publish():
+@task
+def publish(c):
     local('pelican -s publishconf.py')
-    project.rsync_project(
-        remote_dir=dest_path,
-        exclude=".DS_Store",
-        local_dir=DEPLOY_PATH.rstrip('/') + '/',
-        delete=True
-    )
+    rsync(c, deploy_path + '/', dest_path, exclude=".DS_Store", delete=True)
+    #project.rsync_project(
+        #remote_dir=dest_path,
+        #exclude=".DS_Store",
+        #c.run_dir=DEPLOY_PATH.rstrip('/') + '/',
+    #)
