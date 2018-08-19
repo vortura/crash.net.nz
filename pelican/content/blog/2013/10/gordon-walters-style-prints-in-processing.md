@@ -51,10 +51,9 @@ and I'm quite pleased with the results. Basically I start by filling the canvas
 with alternating light and dark bars, then step through each bar adding the
 round koru forms. By adding the koru forms, the current bar is broken and the
 previous and following bars of the alternate colour are joined. Chosen purely at
-random, koru (koru? korus? korae? What is the plural anyway?) can overlap with
-those on the previous line. To avoid this, I used a simple mechanism to find the
-usable range in each bar and then selecting a position randomly inside that
-range.
+random, koru can overlap with those on the previous line. To avoid this, I used
+a simple mechanism to find the usable range in each bar and then selecting
+a position randomly inside that range.
 
 This basic process resulted in images that were a reasonable likeness of
 Walters' but there were features in some of his art that I wanted to capture as
