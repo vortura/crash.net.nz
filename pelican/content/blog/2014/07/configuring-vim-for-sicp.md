@@ -269,4 +269,4 @@ suggestions as to how it could be improved, I'd love to hear from you. Send me
 an [email][19], or hit me up on [Twitter][20].
 
 [19]: mailto:richard@crash.net.nz
-[20]: https://twitter.com/elvortura
+[20]: https://twitter.com/rg6581

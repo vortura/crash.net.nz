@@ -24,5 +24,5 @@ You can also find me me on [Github][11] and [Twitter][12], and you can send me a
 [8]: http://stevelosh.com "Steve Losh"
 [10]: http://sirupsen.com/ "Simon Hørup Eskildsen"
 [11]: https://github.com/vortura "Github"
-[12]: https://twitter.com/elvortura "Twitter"
+[12]: https://twitter.com/rg6581 "Twitter"
 [13]: mailto:richard@crash.net.nz
