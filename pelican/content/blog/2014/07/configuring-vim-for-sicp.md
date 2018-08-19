@@ -151,7 +151,7 @@ the following to your `.vimrc`:
     autocmd filetype lisp,scheme,art setlocal equalprg=scmindent.rkt
 
 The script is configurable through the presence of a file called `.lispwords` in
-your home directory. I add `(if 3)` to that file to make the _if_ conditional's
+your home directory. I add `(3 if)` to that file to make the _if_ conditional's
 _then_ and _else_ expressions align with the predicate.
 
 [14]: http://www.ccs.neu.edu/home/dorai/scmindent/index.html
